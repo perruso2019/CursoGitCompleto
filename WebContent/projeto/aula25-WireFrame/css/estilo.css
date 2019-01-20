@@ -1,0 +1,39 @@
+body{
+	font: 10px/1.4 sans-serif;
+}
+
+div.geral{
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.geral,header,nav,div,section,footer{
+	border: 1px solid #333;
+}
+
+header, footer{
+	height: 100px;
+	background: blue;
+}
+
+nav, .busca{
+	height: 40px;
+	background: green;
+}
+
+.slideshow{
+	height: 150px;
+	background: red;
+}
+
+.noticia{
+	height: 150px;
+	background: yellow;
+}
+
+.informacao{
+	height: 150px;
+	background: green;
+}
+

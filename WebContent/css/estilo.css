@@ -1,0 +1,24 @@
+
+/* REgras de estilo Geral*/
+body{
+	background-color: red;
+}
+
+/* Para tela com mais de 300px de largura */
+@media screen and (min-width: 300px){
+	body{
+	background-color: green;
+}
+	h1{color:#fff;}
+
+}
+
+/* Para tela com mais de 900px de largura */
+@media screen and (min-width: 900px){
+	body{
+	background-color: blue;
+}
+}
+
+
+

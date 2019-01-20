@@ -1,0 +1,201 @@
+body{
+	font: 10px/1.4 sans-serif;
+}
+
+div.geral{
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+/* Inicio Topo */
+
+.topo{
+	height: 71px;
+	position: relative;
+	background: url(../img/header.jpg) no-repeat center 0;
+}
+
+img.logomarca{
+	position: absolute;
+	left: 50%;
+	margin-left: -45.5px;
+	top: 20px;
+}
+
+.esconde_mobile{
+	display: none;
+}
+
+
+@media all and (min-width: 480px){
+
+	header.topo{
+		height: 142px;
+	}
+
+	img.logomarca{
+	position: absolute;
+	left: 50%;
+	margin-left: -88px;
+	top: 20px;
+}
+
+	.esconde_480px{
+		display: none;
+	}
+
+	.esconde_mobile{
+	display: block;
+}
+
+}
+
+/* Fim  Topo */
+
+/* Inicio Menu */
+
+nav.navegacao{
+	position: relative;
+	z-index: 9999;
+	height: 40px;
+	font-weight: bold;
+	background-color: #0168B3;
+}
+
+.navegacao ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.navegacao ul li{
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-right: 5px;
+	margin-top: 7px;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.navegacao ul li a{
+	padding:  5px 12px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navegacao ul li a:hover{
+	background: #F59C00;
+	color: #333;
+	border-radius: 4px;
+}
+
+.navegacao ul li.esconde_900px{
+		display: none;
+	}
+
+@media screen and (max-width: 900px){
+
+	.navegacao{
+		position: relative;
+		padding-top: 3px;
+	}
+
+	.navegacao ul li{
+		background-color: #0168B3;
+		display: none;
+		margin: 0;
+	}
+
+
+	.navegacao ul li a{
+		display: block;
+		padding: 5px 5px 5px 10px;
+		text-align: left;
+	}
+
+	.navegacao ul:hover li{
+		border-bottom: 1px solid #01ACE4;
+		display: block;
+		margin: 0;
+	}
+
+	.navegacao ul li.esconde_900px{
+		display: block;
+	}
+}
+
+/* Fim Menu*/
+
+/* Inicio Slide Show */
+
+#slide { 
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 56.25%;
+	overflow: hidden; 
+	box-shadow: 0 0 8px #000; 
+	position: relative; 
+} 
+
+#slide img { 
+
+	width: 100%;
+	position: absolute; 
+	z-index: 1; display: 
+	none; left: 0; 
+} 
+
+#slide p { 
+	z-index:2; 
+	position: absolute; 
+	bottom: 0; 
+	left: 0; 
+	width: 100%; 
+	padding: 10px; 
+	font-family: Arial; 
+	font-size: 18px; 
+	background: rgba(0,0,0,0.5); 
+	color: #fff; 
+}
+
+
+/* Fim Slide Show */
+
+/* Inicio da Busca */
+
+form{ position: relative;}
+
+.busca{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	background: #D5DE37;
+	margin: 5px 0;
+	margin-bottom: 5px;
+}
+
+.busca input[type="search"]{
+	width: 98%;
+	height: 15px;
+	font-size: 15px;
+	border: none;
+	margin-top: 5px;
+	background-color: #D5DE37;
+	color: #FBFCEB;
+}
+
+.busca input[type="submit"]{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top:6px;
+	right:1.5%;
+	text-indent: -9999px;
+	cursor:pointer;
+	border: none;
+	background: url('../img/lupa.png') no-repeat;
+}
+
+/* Fim da Busca */
